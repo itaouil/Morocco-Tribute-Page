@@ -1,0 +1,34 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Image Presentation */
+.banner {
+	height: 100vh;
+	width: 100%;
+}
+
+.banner-bg {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 0;
+	
+	/*-- Fallback image for desktop --*/
+	background-image: url(img/rsz_fessky.jpg);
+
+	/*-- Add desktop keyframe animation via bourbon mixin --*/
+	animation: img-slider ease 20s both infinite;
+}
+
+/* Keyframe for image slider */
+@keyframes img-slider {
+	0% {background-image: url(img/rsz_fessky.jpg);}
+	25% {background-image: url(img/rsz_archy.jpg);}
+	50% {background-image: url(img/rsz_camelride.jpg);}
+	75% {background-image: url(img/rsz_chefchaounedoor.jpg);}
+}
