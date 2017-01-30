@@ -99,25 +99,17 @@
 
 /* Keyframes */
 @keyframes imageSlideShow {
-	0%   {opacity: 0; animation-timing-function: ease-in}
-	5%  {opacity: 1; animation-timing-function: ease-out}
-	25%  {opacity: 1;}
-	33%  {opacity: 0;}
-	100% {opacity: 0;}
+	0%   {opacity: 1; animation-timing-function: ease-in}
+	21%  {opacity: 1; animation-timing-function: ease-out}
+	25%  {opacity: 0;}
+	96%  {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 @keyframes titleSlideShow {
-	0%   {opacity: 0;}
-	5%  {opacity: 1;}
-	25%  {opacity: 1;}
-	29%  {opacity: 0;}
-	100% {opacity: 0;}
+	0%   {opacity: 1;}
+	21%  {opacity: 1;}
+	25%  {opacity: 0;}
+	96%  {opacity: 0;}
+	100% {opacity: 1;}
 }
-
-
-
-
-
-
-
-
