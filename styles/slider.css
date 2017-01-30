@@ -1,0 +1,123 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.slideShow, .slideShow:after {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+.slideShow li span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	height: 100%;
+	width: 100%;
+	
+	opacity: 0;
+	z-index: 0;
+	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	animation: imageSlideShow 24s linear infinite 0s;
+}
+
+.slideShow li div {
+	width: 80%;
+	margin: 0 auto;
+
+	opacity: 0;
+	color: #fff;
+	z-index: 1000;
+	text-align: center;
+
+	animation: titleSlideShow 24s linear infinite 0s;
+}
+
+.slideShow li:nth-child(1) div h2 {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 100px;
+}
+
+.slideShow li:nth-child(2) div h2 {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 60px;
+}
+
+.slideShow li:nth-child(3) div h2 {
+	font-family: 'Satisfy', cursive;
+	font-size: 60px;
+}
+
+.slideShow li:nth-child(4) div h2 {
+	font-family: 'Slabo 27px', serif;
+	font-size: 60px;
+}
+
+.slideShow li div h3 {
+	font-family: 'Miller Daily', 'Georgia', 'Times', 'Times New Roman', serif;
+	font-size: 20px;
+}
+
+.slideShow li:nth-child(1) span {
+	background-image: url(/images/camelRide.jpg);
+}
+
+.slideShow li:nth-child(2) span {
+	background-image: url(/images/assilah.jpg);
+	animation-delay: 6s;
+}
+
+.slideShow li:nth-child(3) span {
+	background-image: url(/images/chefchaouneDoor.jpg);
+	animation-delay: 12s;
+}
+
+.slideShow li:nth-child(4) span {
+	background-image: url(/images/fesSky.jpg);
+	animation-delay: 18s;
+}
+
+.slideShow li:nth-child(2) div {
+    animation-delay: 6s; 
+}
+.slideShow li:nth-child(3) div {
+    animation-delay: 12s; 
+}
+.slideShow li:nth-child(4) div {
+    animation-delay: 18s; 
+}
+
+/* Keyframes */
+@keyframes imageSlideShow {
+	0%   {opacity: 0; animation-timing-function: ease-in}
+	5%  {opacity: 1; animation-timing-function: ease-out}
+	25%  {opacity: 1;}
+	33%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes titleSlideShow {
+	0%   {opacity: 0;}
+	5%  {opacity: 1;}
+	25%  {opacity: 1;}
+	29%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+
+
+
+
+
+
+
