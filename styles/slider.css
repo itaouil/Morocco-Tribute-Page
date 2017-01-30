@@ -4,6 +4,7 @@
 	padding: 0;
 }
 
+/* Give full size to parent */
 .slideShow, .slideShow:after {
 	position: fixed;
 	top: 0;
@@ -13,17 +14,18 @@
 	height: 100%;
 }
 
+/* Give full size to images */
 .slideShow li span {
 	position: absolute;
 	top: 0;
 	left: 0;
-	
+
 	height: 100%;
 	width: 100%;
-	
+
 	opacity: 0;
 	z-index: 0;
-	
+
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -31,36 +33,40 @@
 	animation: imageSlideShow 24s linear infinite 0s;
 }
 
+/* Position image's lock ups */
 .slideShow li div {
-	width: 80%;
-	margin: 0 auto;
+	width: 100%;
 
 	opacity: 0;
 	color: #fff;
 	z-index: 1000;
 	text-align: center;
 
+	position: fixed;
+	top: 425px;
+
 	animation: titleSlideShow 24s linear infinite 0s;
 }
 
+/* Set fonts for image lock ups */
 .slideShow li:nth-child(1) div h2 {
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 100px;
+	font-size: 150px;
 }
 
 .slideShow li:nth-child(2) div h2 {
 	font-family: 'Fira Sans Condensed', sans-serif;
-	font-size: 60px;
+	font-size: 100px;
 }
 
 .slideShow li:nth-child(3) div h2 {
 	font-family: 'Satisfy', cursive;
-	font-size: 60px;
+	font-size: 100px;
 }
 
 .slideShow li:nth-child(4) div h2 {
-	font-family: 'Slabo 27px', serif;
-	font-size: 60px;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 100px;
 }
 
 .slideShow li div h3 {
@@ -68,48 +74,75 @@
 	font-size: 20px;
 }
 
+/* Target image space and inject image onto it */
 .slideShow li:nth-child(1) span {
-	background-image: url(/images/camelRide.jpg);
+	background-image: url(../images/camelRide.jpg);
 }
 
 .slideShow li:nth-child(2) span {
-	background-image: url(/images/assilah.jpg);
+	background-image: url(../images/assilah.jpg);
 	animation-delay: 6s;
 }
 
 .slideShow li:nth-child(3) span {
-	background-image: url(/images/chefchaouneDoor.jpg);
+	background-image: url(../images/fesSky.jpg);
 	animation-delay: 12s;
 }
 
 .slideShow li:nth-child(4) span {
-	background-image: url(/images/fesSky.jpg);
+	background-image: url(../images/chefchaouneDoor.jpg);
 	animation-delay: 18s;
 }
 
+/* Set animation delay for lock ups */
 .slideShow li:nth-child(2) div {
-    animation-delay: 6s; 
+	animation-delay: 6s;
 }
 .slideShow li:nth-child(3) div {
-    animation-delay: 12s; 
+	animation-delay: 12s;
 }
 .slideShow li:nth-child(4) div {
-    animation-delay: 18s; 
+	animation-delay: 18s;
+}
+
+/* Scroll Down Arrow */
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.arrow {
+	text-align: center;
+	margin: 80% 0 10% 0;
+}
+
+.bounce {
+	animation: bounce 2s infinite;
 }
 
 /* Keyframes */
 @keyframes imageSlideShow {
-	0%   {opacity: 1; animation-timing-function: ease-in}
-	21%  {opacity: 1; animation-timing-function: ease-out}
-	25%  {opacity: 0;}
-	96%  {opacity: 0;}
-	100% {opacity: 1;}
+	0%   {opacity: 0; animation-timing-function: ease-in}
+	5%  {opacity: 1; animation-timing-function: ease-out}
+	25%  {opacity: 1;}
+	33%  {opacity: 0;}
+	100% {opacity: 0;}
 }
 
 @keyframes titleSlideShow {
-	0%   {opacity: 1;}
-	21%  {opacity: 1;}
-	25%  {opacity: 0;}
-	96%  {opacity: 0;}
-	100% {opacity: 1;}
+	0%   {opacity: 0;}
+	5%  {opacity: 1;}
+	25%  {opacity: 1;}
+	29%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes bounce {
+	0% {transform: translateY(0);}
+	20% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	50% {transform: translateY(0);}
+	60% {transform: translateY(-15px);}
+	80% {transform: translateY(0);}
+	100% {transform: translateY(0);}
 }
