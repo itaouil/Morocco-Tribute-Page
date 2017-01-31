@@ -1,17 +1,8 @@
-/* Reset */
-* {
-	margin: 0;
-	padding: 0;
-}
-
 /* Give full size to parent */
 .slideShow, .slideShow:after {
-	position: fixed;
+	position: absolute;;
 	top: 0;
 	left: 0;
-
-	width: 100%;
-	height: 100%;
 }
 
 /* Give full size to images */
@@ -20,8 +11,8 @@
 	top: 0;
 	left: 0;
 
-	height: 100%;
-	width: 100%;
+	width: 100vw;
+	height: 100vh;
 
 	opacity: 0;
 	z-index: 0;
@@ -35,15 +26,21 @@
 
 /* Position image's lock ups */
 .slideShow li div {
-	width: 100%;
-
 	opacity: 0;
 	color: #fff;
 	z-index: 1000;
-	text-align: center;
 
-	position: fixed;
-	top: 425px;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 	animation: titleSlideShow 24s linear infinite 0s;
 }
@@ -113,7 +110,12 @@ a {
 
 .arrow {
 	text-align: center;
-	margin: 80% 0 10% 0;
+	width: auto;
+	height: auto;
+
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
 }
 
 .bounce {
