@@ -1,27 +1,75 @@
-/* Give full size to parent */
-.slideShow, .slideShow:after {
-	position: absolute;;
+/* Full Width and Height (R) */
+.full-size {
+	width: 100vw;
+	height: 100vh;
+}
+
+/* Absolutely Positioned (R) */
+.position-absolute {
+	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-/* Give full size to images */
-.slideShow li span {
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	width: 100vw;
-	height: 100vh;
-
-	opacity: 0;
-	z-index: 0;
-
+/* Background Properties (R) */
+.bgd-properties {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
 
+/* Flex Layout Properties (R) */
+.flex-properties {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Image Sliding Animation */
+.img-animation {
 	animation: imageSlideShow 24s linear infinite 0s;
+}
+
+/* Image Sliding Animation */
+.title-animation {
+	animation: titleSlideShow 24s linear infinite 0s;
+}
+
+/* Reem Kufi, 150px size */
+.reem-kufi-150 {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 150px;
+}
+
+/* Fira Sand Condensed, 100px size */
+.fira-sans-condensed-100 {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 100px;
+}
+
+/* Reem Kufi, 150px size */
+.satisfy-100 {
+	font-family: 'Satisfy', cursive;
+	font-size: 100px;
+}
+
+/* Reem Kufi, 150px size */
+.reem-kufi-100 {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 100px;
+}
+
+/* H3 Font, 20px */
+.miller-20px {
+	font-family: 'Miller Daily', 'Georgia', 'Times', 'Times New Roman', serif;
+	font-size: 20px;
+}
+
+/* Give full size to images */
+.slideShow li span {
+	opacity: 0;
+	z-index: 0;
 }
 
 /* Position image's lock ups */
@@ -29,46 +77,6 @@
 	opacity: 0;
 	color: #fff;
 	z-index: 1000;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	width: 100vw;
-	height: 100vh;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	animation: titleSlideShow 24s linear infinite 0s;
-}
-
-/* Set fonts for image lock ups */
-.slideShow li:nth-child(1) div h2 {
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 150px;
-}
-
-.slideShow li:nth-child(2) div h2 {
-	font-family: 'Fira Sans Condensed', sans-serif;
-	font-size: 100px;
-}
-
-.slideShow li:nth-child(3) div h2 {
-	font-family: 'Satisfy', cursive;
-	font-size: 100px;
-}
-
-.slideShow li:nth-child(4) div h2 {
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 100px;
-}
-
-.slideShow li div h3 {
-	font-family: 'Miller Daily', 'Georgia', 'Times', 'Times New Roman', serif;
-	font-size: 20px;
 }
 
 /* Target image space and inject image onto it */
