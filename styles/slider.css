@@ -11,6 +11,12 @@
 	left: 0;
 }
 
+.position-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
 /* Background Properties (R) */
 .bgd-properties {
 	background-size: cover;
@@ -39,31 +45,31 @@
 /* Reem Kufi, 150px size */
 .reem-kufi-150 {
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 150px;
+	font-size: 9.375em;
 }
 
 /* Fira Sand Condensed, 100px size */
 .fira-sans-condensed-100 {
 	font-family: 'Fira Sans Condensed', sans-serif;
-	font-size: 100px;
+	font-size: 6.25em;
 }
 
 /* Reem Kufi, 150px size */
 .satisfy-100 {
 	font-family: 'Satisfy', cursive;
-	font-size: 100px;
+	font-size: 6.25em;
 }
 
 /* Reem Kufi, 150px size */
 .reem-kufi-100 {
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 100px;
+	font-size: 6.25em;
 }
 
 /* H3 Font, 20px */
 .miller-20px {
 	font-family: 'Miller Daily', 'Georgia', 'Times', 'Times New Roman', serif;
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 /* Give full size to images */
@@ -111,9 +117,8 @@
 }
 
 /* Scroll Down Arrow */
-a {
+.arrow-color {
 	color: #fff;
-	text-decoration: none;
 }
 
 .arrow {
@@ -121,7 +126,7 @@ a {
 	width: auto;
 	height: auto;
 
-	position: absolute;
+	position: absolute;;
 	bottom: 20px;
 	left: 50%;
 }
