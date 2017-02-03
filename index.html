@@ -2,41 +2,44 @@
 <html>
 
 <head>
-	<!-- Meta Information -->
+
+	<!-- META INFORMATION -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Title -->
+	<!-- TITLE -->
 	<title>Morocco: Look Beyond</title>
-	
-	<!-- JQuery CDN -->
+
+	<!-- JQUERY CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<!-- Custom CSS -->
+	<!-- CUSTOM CSS -->
 	<link type="text/css" rel="stylesheet" href="styles/base.css">
 	<link type="text/css" rel="stylesheet" href="styles/slider.css">
 	<link type="text/css" rel="stylesheet" href="styles/presentation.css">
 
-	<!-- Custom Scripts -->
+	<!-- CUSTOM SCRIPTS -->
 	<script language="JavaScript" type="text/javascript" src='scripts/main.js'></script>
 
-	<!-- Google font -->
+	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Reem+Kufi|Satisfy">
 
-	<!-- Bootstrap Font-Awesome -->
+	<!-- BOOSTRAP FONT-AWESOME -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	
 </head>
 
 <body>
 
-<!-- Slide Show -->
-<div class="full-size">
+<!-- MAIN CONTAINER -->
+<div id="main-container class="full-size"">
 
-	<!-- Images -->
-	<ul class="slideShow position-absolute">
+<!-- IMAGE SLIDESHOW -->
+<div id="img-slideshow" class="full-size">
+
+	<!-- LIST OF IMAGES AND LOCKUPS -->
+	<ul class="slideShow position-absolute full-size">
 
 		<li>
 			<span class="full-size position-absolute bgd-properties img-animation"></span>
@@ -71,29 +74,35 @@
 		</li>
 
 	</ul>
+	<!-- LIST OF IMAGES AND LOCKUPS END -->
 
-	<!-- Arrow Bounce Scroll Down -->
+	<!-- ARROW BOUNCE SCROLL DOWN -->
 	<div class="arrow bounce">
 		<a class="fa fa-arrow-down fa-2x arrow-color" style="bottom: 30px;" href="#"></a>
 	</div>
+	<!-- ARROW BOUNCE SCROLL DOWN END -->
 
 </div>
+<!-- IMAGE SLIDESHOW END -->
 
 <!-- Presenting Morocco -->
-<section class="container">
+<section id="info" class="container">
 
-	<div class="segment">
+	<!-- NAVIGATION BAR -->
+	<nav>
 
-		<nav id="nav-header">
+		<ul>
+			<li><a href="">Glimpse</a></li>
+			<li><a href="">Map</a></li>
+			<li><a href="">Cities</a></li>
+			<li><a href="">Survival</a></li>
+		</ul>
 
-			<ul class="inner-container">
-				<li><a href="">Glimpse</a></li>
-				<li><a href="">Map</a></li>
-				<li><a href="">Cities</a></li>
-				<li><a href="">Survival</a></li>
-			</ul>
+	</nav>
+	<!-- NAVIGATION BAR END -->
 
-		</nav>
+	<!-- GLIMPSE SECTION -->
+	<div class="glimpse">
 
 		<h3>Morocco: You'll <i class="fa fa-heart" aria-hidden="true"></i> It</h3>
 
@@ -101,19 +110,22 @@
 
 			<p>
 				From <b>Saharan</b> dunes to the peaks of the <b>High Atlas</b>, <strong>Morocco</strong> <del>could have been</del> <ins>is</ins> tailor-made for travellers. Lyrical landscapes carpet this slice of North Africa like the richly coloured and patterned rugs you’ll lust after in local cooperatives. The mountains <img src="icons/snowed-mountains.png" alt="Mountain Range Icon"> – not just the famous High Atlas but also the Rif and suntanned ranges leading to Saharan oases <img src="icons/palm-tree.png" alt="Desert Oasis Icon"> – offer simple, breathtaking pleasures: night skies <img src="icons/sky.png" alt="Sky Night Icon"> glistening in the thin air, and views over a fluffy cloudbank from the Tizi n’Test pass. On lower ground, there are rugged coastlines, waterfalls <img src="icons/waterfall.png" alt="Waterfall Icon">  and caves in forested hills, and the mighty desert <img src="icons/desert.png" alt="Desert Icon">.
-			</p>	
-			
+			</p>
+
 		</blockquote>
 
+		<div class="video-wrapper">
+			<iframe></iframe>
+		</div>
+
 	</div>
-	
-	<div class="video-wrapper container">
-		<img src="https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5222667836001_5214872539001-vs.jpg?pubId=5104226627001&videoId=5214872539001">
-	</div>
+	<!-- GLIMPSE SECTION END -->
 
 </section>
 
-</body>
+</div>
+<!-- ARROW BOUNCE SCROLL DOWN END -->
 
+</body>
 
 </html>
