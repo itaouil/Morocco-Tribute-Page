@@ -20,3 +20,7 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
+
+a:hover {
+	color: #297cbb;
+}

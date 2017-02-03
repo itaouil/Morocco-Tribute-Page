@@ -2,15 +2,21 @@
     text-align: center;
 }
 
-.segment nav {
-    margin-bottom: 80px;
+.segment h3 {
+    font-size: 4rem;
+    font-family: 'Reem Kufi', sans-serif;
+	font-weight: thin;
+	margin-top: 9rem;
 }
 
-.segment h3 {
-    margin-bottom: 30px;
-    font-size: 5rem;
-    font-family: 'Reem Kufi', sans-serif;
-    color: rgb(193, 39, 45);
+.segment h3:after {
+	content: "";
+    display: block;
+	border-bottom: .2rem solid #dc221a;
+    left: 50%;
+    margin-left: -1.5rem;
+    position: absolute;
+    width: 3rem;
 }
 
 .segment i {
@@ -22,20 +28,67 @@ nav {
     border-bottom: .1rem solid #e4e4e4;
 }
 
-nav ul {
+/*nav ul {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;;
-}
+}*/
 
 nav ul li {
-    padding: 10px;
+    padding: 10px 40px;;
+	display: inline-block;
 }
 
 nav ul li a {
     color: #000;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: 'Reem Kufi', sans-serif;
     text-transform: uppercase;
+}
+
+blockquote {
+	font-size: 1.3rem;
+	font-family: 'Arvo', serif;
+	text-align: center;
+	
+  	margin: 3.5em 10px;
+  	padding: 0.5em 10px;
+  	quotes: "\201C""\201D""\2018""\2019";
+	
+	word-spacing: 0.2rem;
+	line-height: 2.5rem;
+	
+	text-align: justify;
+}
+
+blockquote img {
+	height: 32px;
+	widows: 32px;
+	vertical-align: -0.3rem;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.6em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.video-wrapper img {
+	height: auto;
+	width: 100%;
 }
