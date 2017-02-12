@@ -6,8 +6,8 @@
 
 /* Container Basic Class */
 .container {
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 80% !important;
+    margin: 0 auto !important;
 }
 
 /* Unstyle Unordered List */

@@ -1,97 +1,167 @@
+/* Navbar */
 nav {
-    padding: 10px 0;
-    text-align: center;
-    border-bottom: .1rem solid #e4e4e4;
+	padding: 10px 0;
+  text-align: center;
+	background-color: white;
+  border-bottom: .2rem solid #e4e4e4;
 }
 
 nav ul li {
-    padding: 10px 40px;
-    display: inline-block;
+	padding: 10px 40px;
+  display: inline-block;
 }
 
 nav ul li a {
-    color: #000;
-    font-size: 0.8rem;
-    font-family: 'Reem Kufi', sans-serif;
-    text-transform: uppercase;
+  color: #000;
+  font-size: 0.8rem;
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
 }
 
+/* Glimpse Section Part */
 .glimpse {
-    text-align: center;
+	text-align: center;
+	border-bottom: .2rem solid #e4e4e4;
 }
 
 .glimpse h3 {
-    font-size: 4rem;
-    font-family: 'Reem Kufi', sans-serif;
-    font-weight: thin;
-    margin-top: 9rem;
+  font-size: 4rem;
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: thin;
+  margin-top: 9rem;
 }
 
 .glimpse h3:after {
-    content: "";
-    display: block;
-    border-bottom: .2rem solid #dc221a;
-    left: 50%;
-    margin-left: -1.5rem;
-    position: absolute;
-    width: 3rem;
+  content: "";
+  display: block;
+  border-bottom: .2rem solid #dc221a;
+  left: 50%;
+  margin-left: -1.5rem;
+  position: absolute;
+  width: 3rem;
+	z-index: -1;
 }
 
 .glimpse i {
-    color: rgb(0, 98, 51);
+  color: #dc221a;
 }
 
 .glimpse blockquote {
-    font-size: 1.3rem;
-    font-family: 'Arvo', serif;
-    text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Arvo', serif;
+  text-align: center;
 
-    margin: 3.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
+	margin: 3.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
 
-    word-spacing: 0.2rem;
-    line-height: 2.5rem;
+  word-spacing: 0.2rem;
+  line-height: 2.5rem;
 
-    text-align: justify;
+  text-align: justify;
 }
 
 .glimpse blockquote img {
-    height: 32px;
-    widows: 32px;
-    vertical-align: -0.3rem;
+  height: 32px;
+  width: 32px;
+  vertical-align: -0.3rem;
 }
 
 .glimpse blockquote:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    vertical-align: -0.4em;
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
 }
 
 .glimpse blockquote:after {
-    color: #ccc;
-    content: close-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    vertical-align: -0.6em;
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.6em;
 }
 
 .glimpse blockquote p {
-    display: inline;
+  display: inline;
 }
 
 .video-wrapper {
-    position: relative;
+	margin-bottom: 4rem;
 }
 
 .video-wrapper iframe {
-    background-image: url();
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 700px;
+}
+
+.video-wrapper p {
+	font-family: 'Arvo', serif;
+	font-size: 1rem;
+	margin-top: 10px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	max-width: 80%;
+	margin: 0 auto 9rem auto;
+	overflow-y: visible;
+}
+
+.nav-toggle {
+	color: chocolate;
+}
+
+/* Map Section Part */
+.map {
+	text-align: center;
+	border-bottom: .2rem solid #e4e4e4;
+}
+
+.map h3 {
+  font-size: 4rem;
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: thin;
+  margin-top: 5rem;
+}
+
+.map h3:after {
+  content: "";
+  display: block;
+  left: 50%;
+  margin-left: -1.5rem;
+  position: absolute;
+  width: 3rem;
+}
+
+.map i {
+  color: rgb(0, 98, 51);
+}
+
+#googleMap {
+	height: 500px;
+}
+
+/* Destinations */
+.destinations {
+	text-align: center;
+}
+
+.destinations h3 {
+	font-size: 4rem;
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: thin;
+  margin-top: 5rem;
+	margin-bottom: 1.5rem;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
