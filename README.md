@@ -1,2 +1,2 @@
 # Morocco-Tribute-Page
-A personal project that takes as input my deep love for my original country. MOROCCO.
+A FCC driven project where I designed and developed a tribute page about Morocco.
