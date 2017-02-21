@@ -1,161 +1,159 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <!-- META INFORMATION -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- TITLE -->
-		<title>Morocco: Look Beyond</title>
-		
-		<!-- Google Maps API -->
-		<script async defer
-  		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMyrqyH9l8qymJm62kKAh_YvavfNZ2S7Y">
-		</script>
+<head>
+	<!-- META INFORMATION -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- JQUERY CDN -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- TITLE -->
+	<title>Morocco: Look Beyond</title>
 
-		<!-- CUSTOM CSS -->
-		<link type="text/css" rel="stylesheet" href="styles/base.css">
-		<link type="text/css" rel="stylesheet" href="styles/slider.css">
-	    <link type="text/css" rel="stylesheet" href="styles/glimpse.css">
-	    <link type="text/css" rel="stylesheet" href="styles/destinations.cs">
-		<link type="text/css" rel="stylesheet" href="styles/map.css">
+	<!-- Google Maps API -->
+	<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMyrqyH9l8qymJm62kKAh_YvavfNZ2S7Y">
+	</script>
 
-		<!-- CUSTOM SCRIPTS -->
-		<script language="JavaScript" type="text/javascript" src='scripts/main.js'></script>
+	<!-- JQUERY CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-		<!-- GOOGLE FONTS -->
-		<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Reem+Kufi|Satisfy">
+	<!-- CUSTOM CSS -->
+	<link type="text/css" rel="stylesheet" href="styles/base.css">
+	<link type="text/css" rel="stylesheet" href="styles/slider.css">
+	<link type="text/css" rel="stylesheet" href="styles/navigation.css">
+	<link type="text/css" rel="stylesheet" href="styles/glimpse.css">
+	<link type="text/css" rel="stylesheet" href="styles/destinations.cs">
+	<link type="text/css" rel="stylesheet" href="styles/map.css">
 
-		<!-- BOOSTRAP FONT-AWESOME -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- CUSTOM SCRIPTS -->
+	<script language="JavaScript" type="text/javascript" src='scripts/main.js'></script>
 
-	</head>
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Reem+Kufi|Satisfy">
 
-	<body>
+	<!-- BOOSTRAP FONT-AWESOME -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<!-- MAIN CONTAINER -->
-		<div id="main-container">
+</head>
 
-			<!-- IMAGE SLIDESHOW -->
-			<div id="img-slideshow" class="full-size">
+<body>
 
-				<!-- LIST OF IMAGES AND LOCKUPS -->
-				<ul class="slideShow position-absolute full-size">
+<!-- MAIN CONTAINER -->
+<div id="main-container">
 
-					<li>
-						<span class="full-size position-absolute bgd-properties img-animation"></span>
-						<div class="full-size position-absolute flex-properties title-animation">
-							<h2 class="reem-kufi-150">المغرب</h2>
-							<h3 class="miller-20px">the richness of the desert</h3>
-						</div>
-					</li>
+	<!-- IMAGE SLIDESHOW -->
+	<div id="img-slideshow" class="full-size">
 
-					<li>
-						<span class="full-size position-absolute bgd-properties img-animation"></span>
-						<div class="full-size position-absolute flex-properties title-animation">
-							<h2 class="fira-sans-condensed-100">Μαρόκο</h2>
-							<h3 class="miller-20px">a salty breeze</h3>
-						</div>
-					</li>
+		<!-- LIST OF IMAGES AND LOCKUPS -->
+		<ul class="slideShow position-absolute full-size">
 
-					<li>
-						<span class="full-size position-absolute bgd-properties img-animation"></span>
-						<div class="full-size position-absolute flex-properties title-animation">
-							<h2 class="satisfy-100">摩洛哥</h2>
-							<h3 class="miller-20px">an adventure awaiting you</h3>
-						</div>
-					</li>
-
-					<li>
-						<span class="full-size position-absolute bgd-properties img-animation"></span>
-						<div class="full-size position-absolute flex-properties title-animation">
-							<h2 class="reem-kufi-100">Morocco</h2>
-							<h3 class="miller-20px">welcomes you</h3>
-						</div>
-					</li>
-
-				</ul>
-				<!-- LIST OF IMAGES AND LOCKUPS END -->
-
-				<!-- ARROW BOUNCE SCROLL DOWN -->
-				<div class="arrow bounce">
-					<a class="fa fa-arrow-down fa-2x arrow-color" style="bottom: 30px;" href="#"></a>
+			<li>
+				<span class="full-size position-absolute bgd-properties img-animation"></span>
+				<div class="full-size position-absolute flex-properties title-animation">
+					<h2 class="reem-kufi-150">المغرب</h2>
+					<h3 class="miller-20px">the richness of the desert</h3>
 				</div>
-				<!-- ARROW BOUNCE SCROLL DOWN END -->
+			</li>
 
-			</div>
-			<!-- IMAGE SLIDESHOW END -->
-
-			<!-- Presenting Morocco -->
-			<section id="info" class="container">
-
-				<!-- NAVIGATION BAR -->
-				<nav id=nav-bar>
-
-					<ul>
-						<li><a href="#glimpse-section" id="glimpse-nav">Glimpse</a></li>
-						<li><a href="" id="destinations-nav">Destination</a></li>
-						<li><a href="#map-section" id="map-nav">Map</a></li>
-						<li><a href="" id="survival-nav">Survival</a></li>
-					</ul>
-
-				</nav>
-				<!-- NAVIGATION BAR END -->
-
-				<!-- GLIMPSE SECTION -->
-				<div class="glimpse" id="glimpse-section">
-
-					<h3>Morocco: You'll <i class="fa fa-heart" aria-hidden="true"></i> It</h3>
-
-					<blockquote cite="http://www.lonelyplanet.com/morocco/introduction#ixzz4XKv0ck4o">
-
-						<p>
-							From <b>Saharan</b> dunes to the peaks of the <b>High Atlas</b>, <strong>Morocco</strong> <del>could have been</del> <ins>is</ins> tailor-made for travellers. Lyrical landscapes carpet this slice of North Africa like the richly coloured and patterned rugs you’ll lust after in local cooperatives. The mountains <img src="icons/snowed-mountains.png" alt="Mountain Range Icon"> – not just the famous High Atlas but also the Rif and suntanned ranges leading to Saharan oases <img src="icons/palm-tree.png" alt="Desert Oasis Icon"> – offer simple, breathtaking pleasures: night skies <img src="icons/sky.png" alt="Sky Night Icon"> glistening in the thin air, and views over a fluffy cloudbank from the Tizi n’Test pass. On lower ground, there are rugged coastlines, waterfalls <img src="icons/waterfall.png" alt="Waterfall Icon">  and caves in forested hills, and the mighty desert <img src="icons/desert.png" alt="Desert Icon">.
-						</p>
-
-					</blockquote>
-
-					<div class="video-wrapper">
-						<iframe src='//players.brightcove.net/5104226627001/default_default/index.html?videoId=5214872539001' allowfullscreen frameborder=0></iframe>
-						<p>Start exploring Morocco with this Lonely Planet video.</p>
-					</div>
-
+			<li>
+				<span class="full-size position-absolute bgd-properties img-animation"></span>
+				<div class="full-size position-absolute flex-properties title-animation">
+					<h2 class="fira-sans-condensed-100">Μαρόκο</h2>
+					<h3 class="miller-20px">a salty breeze</h3>
 				</div>
-				<!-- GLIMPSE SECTION END -->
-				
-				<!-- DESTINATIONS SECTION -->
-				<div class="destinations" id="destinations-section">
-					
-					<h3>Morocco: <i class="fa fa-plane" aria-hidden="true"></i> Where To Go ?</h3>
-					
-					<ul class="gallery">
-						<li><img src="images/slider/marrakesh.jpg"></li>
-						<li><img src="images/slider/fes.jpg"></li>
-						<li><img src="images/slider/essaouira.jpg"></li>
-					</ul>
-							
-				</div>
-				
-				<!-- MAP SECTION -->
-				<div class="map" id="map-section">
-				
-					<h3>Morocco: <i class="fa fa-globe" aria-hidden="true"></i> Geography</h3>
-					
-					<div id="googleMap"></div>
-				
-				</div>
-				<!-- MAP SECTION END -->
+			</li>
 
-			</section>
+			<li>
+				<span class="full-size position-absolute bgd-properties img-animation"></span>
+				<div class="full-size position-absolute flex-properties title-animation">
+					<h2 class="satisfy-100">摩洛哥</h2>
+					<h3 class="miller-20px">an adventure awaiting you</h3>
+				</div>
+			</li>
+
+			<li>
+				<span class="full-size position-absolute bgd-properties img-animation"></span>
+				<div class="full-size position-absolute flex-properties title-animation">
+					<h2 class="reem-kufi-100">Morocco</h2>
+					<h3 class="miller-20px">welcomes you</h3>
+				</div>
+			</li>
+
+		</ul>
+		<!-- LIST OF IMAGES AND LOCKUPS END -->
+
+		<!-- ARROW BOUNCE SCROLL DOWN -->
+		<div class="arrow bounce">
+			<a class="fa fa-arrow-down fa-2x arrow-color" style="bottom: 30px;" href="#"></a>
+		</div>
+		<!-- ARROW BOUNCE SCROLL DOWN END -->
+
+	</div>
+	<!-- IMAGE SLIDESHOW END -->
+
+	<!-- Presenting Morocco -->
+	<section id="info" class="container">
+
+		<!-- NAVIGATION BAR -->
+		<nav id=nav-bar>
+
+			<ul>
+				<li><a href="#glimpse-section" id="glimpse-nav">Glimpse</a></li>
+				<li><a href="" id="destinations-nav">Destination</a></li>
+				<li><a href="#map-section" id="map-nav">Map</a></li>
+				<li><a href="" id="survival-nav">Survival</a></li>
+			</ul>
+
+		</nav>
+		<!-- NAVIGATION BAR END -->
+
+		<!-- GLIMPSE SECTION -->
+		<div class="glimpse" id="glimpse-section">
+
+			<h3>Morocco: You'll <i class="fa fa-heart" aria-hidden="true"></i> It</h3>
+
+			<blockquote cite="http://www.lonelyplanet.com/morocco/introduction#ixzz4XKv0ck4o">
+
+				<p>
+					From <b>Saharan</b> dunes to the peaks of the <b>High Atlas</b>, <strong>Morocco</strong> <del>could have been</del> <ins>is</ins> tailor-made for travellers. Lyrical landscapes carpet this slice of North Africa like the richly coloured and patterned rugs you’ll lust after in local cooperatives. The mountains <img src="icons/snowed-mountains.png" alt="Mountain Range Icon"> – not just the famous High Atlas but also the Rif and suntanned ranges leading to Saharan oases <img src="icons/palm-tree.png" alt="Desert Oasis Icon"> – offer simple, breathtaking pleasures: night skies <img src="icons/sky.png" alt="Sky Night Icon"> glistening in the thin air, and views over a fluffy cloudbank from the Tizi n’Test pass. On lower ground, there are rugged coastlines, waterfalls <img src="icons/waterfall.png" alt="Waterfall Icon">  and caves in forested hills, and the mighty desert <img src="icons/desert.png" alt="Desert Icon">.
+				</p>
+
+			</blockquote>
+
+			<!-- TODO: Place suggestive image -->
 
 		</div>
-		
-		
-	</body>
+		<!-- GLIMPSE SECTION END -->
+
+		<!-- DESTINATIONS SECTION -->
+		<div class="destinations" id="destinations-section">
+
+			<h3>Morocco: <i class="fa fa-plane" aria-hidden="true"></i> Where To Go ?</h3>
+
+			<ul class="gallery">
+				<li><img src="images/destinations/marrakesh.jpg"></li>
+				<li><img src="images/slider/fes.jpg"></li>
+				<li><img src="images/slider/essaouira.jpg"></li>
+			</ul>
+
+		</div>
+
+		<!-- MAP SECTION -->
+		<div class="map" id="map-section">
+
+			<h3>Morocco: <i class="fa fa-globe" aria-hidden="true"></i> Geography</h3>
+
+			<div id="googleMap"></div>
+
+		</div>
+		<!-- MAP SECTION END -->
+
+	</section>
+
+</div>
+
+
+</body>
 
 </html>

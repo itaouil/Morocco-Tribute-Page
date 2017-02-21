@@ -1,0 +1,67 @@
+/* Glimpse Section Part */
+.glimpse {
+    text-align: center;
+    border-bottom: .2rem solid #e4e4e4;
+}
+
+.glimpse h3 {
+    font-size: 4rem;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: thin;
+    margin-top: 9rem;
+}
+
+.glimpse h3:after {
+    content: "";
+    display: block;
+    border-bottom: .2rem solid #dc221a;
+    left: 50%;
+    margin-left: -1.5rem;
+    position: absolute;
+    width: 3rem;
+    z-index: -1;
+}
+
+.glimpse i {
+    color: #dc221a;
+}
+
+.glimpse blockquote {
+    font-size: 1.3rem;
+    font-family: 'Arvo', serif;
+
+    margin: 3.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+
+    word-spacing: 0.2rem;
+    line-height: 2.5rem;
+
+    text-align: justify;
+}
+
+.glimpse blockquote img {
+    height: 32px;
+    width: 32px;
+    vertical-align: -0.3rem;
+}
+
+.glimpse blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+}
+
+.glimpse blockquote:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.6em;
+}
+
+.glimpse blockquote p {
+    display: inline;
+}

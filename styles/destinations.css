@@ -1,0 +1,19 @@
+/* Destinations */
+.destinations {
+    text-align: center;
+}
+
+.destinations h3 {
+    font-size: 4rem;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: thin;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

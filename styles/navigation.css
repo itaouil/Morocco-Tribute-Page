@@ -1,0 +1,33 @@
+/* Navbar */
+nav {
+    padding: 10px 0;
+    text-align: center;
+    background-color: white;
+    border-bottom: .2rem solid #e4e4e4;
+}
+
+nav ul li {
+    padding: 10px 40px;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 0.8rem;
+    font-family: 'Reem Kufi', sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-toggle {
+    color: chocolate;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 80%;
+    margin: 0 auto 9rem auto;
+    overflow-y: visible;
+}
