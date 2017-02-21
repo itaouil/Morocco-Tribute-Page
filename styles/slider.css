@@ -82,21 +82,21 @@
 
 /* Target image space and inject image onto it */
 .slideShow li:nth-child(1) span {
-	background-image: url(../images/camelRide.jpg);
+	background-image: url(../images/slider/camelRide.jpg);
 }
 
 .slideShow li:nth-child(2) span {
-	background-image: url(../images/assilah.jpg);
+	background-image: url(../images/slider/assilah.jpg);
 	animation-delay: 6s;
 }
 
 .slideShow li:nth-child(3) span {
-	background-image: url(../images/fesSky.jpg);
+	background-image: url(../images/slider/fesSky.jpg);
 	animation-delay: 12s;
 }
 
 .slideShow li:nth-child(4) span {
-	background-image: url(../images/chefchaouneDoor.jpg);
+	background-image: url(../images/slider/chefchaouneDoor.jpg);
 	animation-delay: 18s;
 }
 
