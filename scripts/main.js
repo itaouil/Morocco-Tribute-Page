@@ -22,8 +22,12 @@ $( window ).on( "load", function() {
 
 	/* Sticky Header on scroll */
 	var stickyNavTop = $('nav').offset().top;
+	var stickyNavBottom = $('nav').offset().bottom;
+	
+	/* Map nav toggle */
+	var mapNav = $('#glimpse-section').offset().bottom;
 
-	//Define Function
+	//Define Function (navbar sticky header)
 	var stickyNav = function(){
 
 		var scrollTop = $(window).scrollTop();
@@ -39,11 +43,27 @@ $( window ).on( "load", function() {
 		}
 
 	};
+	
+	//Define Function (map nav toggle)
+	var navMapToggle = function(){
+
+		if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $('#map-nav').addClass('nav-toggle');
+			$('#glimpse-nav').removeClass('nav-toggle');
+		}
+		
+		else {
+			$('#map-nav').removeClass('nav-toggle');
+		}
+
+	};
 
 	stickyNav();
+	navMapToggle();
 
 	$(window).scroll(function() {
 		stickyNav();
+		navMapToggle();
 	});
 
 
