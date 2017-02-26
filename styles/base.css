@@ -24,3 +24,8 @@ a {
 a:hover {
     color: #297cbb;
 }
+
+a .button {
+	text-decoration: none;
+	text-align: center;
+}
